@@ -1,0 +1,9 @@
+-main Main
+-cp src
+
+-lib heaps
+
+-D windowSize=800x500
+-D windowTitle=Colorpicker
+
+-js main.js
