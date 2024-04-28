@@ -123,7 +123,7 @@ class Colorpicker {
         var rgb = Converter.hsvToRgb(hsv.x, hsv.y, hsv.z);
         var hex = Converter.rgbToHex(rgb[0], rgb[1], rgb[2]).hex();
 
-        text.text = 'HSV: ${Math.round(hsv.x * prec) / prec}, ${Math.round(hsv.y * prec) / prec}, ${Math.round(hsv.z * prec) / prec}\nRGB: ${rgb[0]}, ${rgb[1]}, ${rgb[2]}\nHex: 0x${hex}';
+        text.text = 'HSV: ${Math.round(hsv.x * prec) / prec}, ${Math.round(hsv.y * prec) / prec}, ${Math.round(hsv.z * prec) / prec}\nRGB: ${Math.round(rgb[0])}, ${Math.round(rgb[1])}, ${Math.round(rgb[2])}\nHex: 0x${hex}';
 
 
         var mouse = new Point(scene.getScene().mouseX, scene.getScene().mouseY);
